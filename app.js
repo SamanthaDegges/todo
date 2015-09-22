@@ -4,8 +4,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
 
 var routes = require('./routes/index');
 var todos = require('./routes/todos');//this is the route that we need to reference from our routes folder.
